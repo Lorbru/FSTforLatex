@@ -12,7 +12,7 @@ The pipeline is composed of an Automatic Speech Recongition model (whisper ASR m
 
 2. Run ```streamlit run streamlit_app.py```
 
-## Exemples (Seq2Tex_fr)
+## Examples (Seq2Tex_fr)
 
 Some examples of transcriptions for short math expressions (```python main.py```)
 
