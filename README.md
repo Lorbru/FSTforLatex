@@ -14,7 +14,7 @@ The pipeline is composed of an Automatic Speech Recongition model (whisper ASR m
 
 ## Examples (Seq2Tex_fr)
 
-Some examples of transcriptions for short math expressions (```python main.py```)
+Some examples of transcriptions for short math expressions :
 
 ```
 "la somme pour i égal un à n de u indice i"
