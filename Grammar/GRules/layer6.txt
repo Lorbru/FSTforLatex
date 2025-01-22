@@ -1,0 +1,5 @@
+[var|numvar] #<sup> [expr1|expr];##< [var|numvar] ^ { [expr1|expr] } >##;var;
+[var|supvar] #<sub> [var|num|numvar|supvar];##< [var|supvar] _ { [var|num|numvar|supvar] } >##;var;
+[var|supvar] #<sub> [var] #<sub> [var|num|numvar];##< [var|supvar] _ { [var] _ { [var|num|numvar] } } >##;var;
+[var] #<sub> [var|num|numvar|supvar] #<sup> [expr1|expr];##< [var] _ { [var|num|numvar|supvar] } ^ { [expr1|expr] } >##;var;
+[var] #<sup> [expr1|expr] #<sub> [var|num|numvar|supvar];##< [var] ^ { [expr1|expr] } _ { [var|num|numvar|supvar] } >##;var;

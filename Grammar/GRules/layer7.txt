@@ -1,0 +1,15 @@
+[expr1] #<fact> [expr];[expr1] ( [expr] );rm;
+[expr] #<fact> [expr];( [expr] ) ( [expr] );rm;
+[expr1|expr] #<over> [expr1|expr];\frac { [expr1|expr] } { [expr1|expr] };rm;
+\partial #<apply> [var] #<over> [var|opvar];##< \frac { \partial [var] } { \partial [var|opvar] } >##;rm;
+\partial #<over> [var|opvar|supvar|numvar] #<apply>;##< \frac { \partial } { \partial [var|opvar|supvar|numvar] } >##;rm;
+[var] #<apply> [expr1|expr];##< [var] ( [expr1|expr] ) >##;rm;
+[fun] [#<apply>]? [expr1|expr];##< [fun] [-rm] ( [expr1|expr] ) >##;rm;
+\sqrt #<apply> [expr1|expr];##< \sqrt { [expr1|expr] } >##;rm;
+\binom #<apply> [expr1|expr] [expr1|expr];##< \binom { [expr1|expr] } { [expr1|expr] } >##;rm;
+\lVert #<apply> [expr1|expr];\lVert [expr1|expr] \rVert;rm;
+\vert #<apply> [expr1|expr];\vert [expr1|expr] \vert;rm;
+\mathbb { E } #<apply> [expr1|expr] [[rel|\vert][expr1|expr]]*;##< \mathbb { E } \lbrack [expr1|expr] [[rel|\vert][expr1|expr]]* \rbrack >##;rm;
+\mathbb { P } #<apply> [expr1|expr] [[rel|\vert][expr1|expr]]*;##< \mathbb { P } ( [expr1|expr] [[rel|\vert][expr1|expr]]* ) >##;rm;
+\mathbb { V } #<apply> [expr1|expr];##< \mathbb { V } ( [expr1|expr] ) >##;rm;
+\neg #<apply> [expr1|expr];##< \neg ( [expr1|expr] ) >##;rm;

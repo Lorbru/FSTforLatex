@@ -1,0 +1,10 @@
+Data
+rsc
+Scores
+**\__pycache__
+WhisperFleursAnalysis.py
+WhisperAnalysis.py
+WFSTASRAnalysis.py
+WFSTAnalysis.py
+Wav2Vec2bhFleursAnalysis.py
+Wav2Vec2bhAnalysis.py

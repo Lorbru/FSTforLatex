@@ -1,0 +1,3 @@
+##< [dig]+ >##;##< [dig]+ >##;num;
++ \infty;##< + \infty >##;num;
+- \infty;##< - \infty >##;num;

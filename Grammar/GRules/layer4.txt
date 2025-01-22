@@ -1,0 +1,14 @@
+\forall [var] [set];##< \forall [var] \in [set] >##;setexpr;
+\exists [var] [set];##< \exists [var] \in [set] >##;setexpr;
+\exists ! [var] [set];##< \exists ! [var] \in [set] >##;setexpr;
+[var] #<square>;##< [var] ^ 2 >##;supvar;
+#<square> #<apply> [var];##< [var] ^ 2 >##;supvar;
+[var] #<cube>;##< [var] ^ 3 >##;supvar;
+#<cube> #<apply> [var];##< [var] ^ 3;supvar;
+[var] #<ovline>;##< \overline { [var] } >##;opvar;
+#<t> #<apply> [var|num];##< [var|num] ^ t >##;supvar;
+[var] #<t>;##< [var] ^ t >##;supvar;
+#<!> #<apply> [var|num|numvar];##< [var|num|numvar] ! >##;opvar;
+[var] #<!>;##< [var] ! >##;opvar;
+[var] [num];##< [var] _ { [num] } >##;numvar;
+[supvar] [num];##< [supvar] _ { [num] } >##;rm; 

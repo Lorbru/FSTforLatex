@@ -1,0 +1,4 @@
+[\sum|\prod|\int|\bigcap|\bigcup|\bigotimes|\bigoplus] #<for> [Sig-#<to>]* #<to> [Sig-#<apply>]* #<apply>;[\sum|\prod|\int|\bigcap|\bigcup|\bigotimes|\bigoplus] \limits _ { [Sig-#<to>]* } ^ { [Sig-#<apply>]* };rm;
+[\sum|\prod|\int|\bigcap|\bigcup|\bigotimes|\bigoplus] #<for> [Sig-#<to>]* #<apply>;[\sum|\prod|\int|\bigcap|\bigcup|\bigotimes|\bigoplus] \limits _ { [Sig-#<to>]* };rm;
+[\sum|\prod|\int|\bigcap|\bigcup|\bigotimes|\bigoplus] #<apply> [Sig-#<to>]* #<to> [Sig-#<apply>]* #<apply>;[\sum|\prod|\int|\bigcap|\bigcup|\bigotimes|\bigoplus] \limits _ { [Sig-#<to>]* } ^ { [Sig-#<apply>]* };rm;
+[\sum|\prod|\int|\bigcap|\bigcup|\bigotimes|\bigoplus] #<apply> [Sig-#<to>]* #<apply>;[\sum|\prod|\int|\bigcap|\bigcup|\bigotimes|\bigoplus] \limits _ { [Sig-#<to>]* };rm;

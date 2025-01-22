@@ -1,0 +1,3 @@
+[uop]? [opvar|numvar|supvar|var|num] [opvar|numvar|supvar|var|num]+;[uop]? [opvar|numvar|supvar|var|num] [opvar|numvar|supvar|var|num]+;expr;
+[uop]? [opvar|numvar|supvar|var|num]+ [[bop][opvar|numvar|supvar|var|num]]+;[uop]? [opvar|numvar|supvar|var|num]+ [[bop][opvar|numvar|supvar|var|num]]+;expr;
+[opvar|numvar|supvar|var|num];[opvar|numvar|supvar|var|num];expr1;

@@ -1,0 +1,11 @@
+[var] #<hat>;\hat { [var] };var;
+[var] #<tilde>;\tilde { [var] };var;
+#<vec> [var];\vec { [var] };var;
+[var] [num] #<hat>;\hat { [var] _ [num] };numvar;
+[var] [num] #<tilde>;\tilde { [var] _ [num] };numvar;
+#<vec> [var] [num];\vec { [var] _ [num] };numvar;
+[var] #<star>;##< [var] ^ * >##;supvar;
+[var] #<sub> #<star>;##< [var] _ * >##;numvar;
+[var] #<'>;##< [var] ' >##;supvar;
+#<for> [var] [set];#<for> [var] \in [set];rm;
+[gwrd-[#<hat>|#<tilde>|#<star>|#<vec>|#<'>]]+ [gwrd-[#<hat>|#<tilde>|#<star>|#<vec>|#<'>]];[-rm] [gwrd-[#<hat>|#<tilde>|#<star>|#<vec>|#<'>]];rm;
