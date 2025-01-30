@@ -6,11 +6,9 @@ The aim of this project is to build a pipeline which allow people to generate th
 
 The pipeline is composed of an Automatic Speech Recongition model (whisper ASR model from OpenAI) and a Weighted Finite State Transducer architecture (pynini, OpenFST) which allow the conversion of a natural language speaking into a valid code structure for LaTeX compilation and rendering.
 
-*Local test :* 
+*Local test : (after installing requirements)* 
 
-1. Run ```pip install -r requirement.txt```
-
-2. Run ```streamlit run streamlit_app.py```
+```streamlit run streamlit_app.py```
 
 ## Examples (Seq2Tex_fr)
 
