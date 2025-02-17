@@ -8,6 +8,8 @@ The pipeline is composed of an Automatic Speech Recognition model (whisper ASR m
 
 ## Exemples (Seq2Tex_fr)
 
+Some examples of transcriptions for short math expressions (```python main.py```)
+
 ```
 "la somme pour i égal un à n de u indice i"
 > \sum \limits _ { i = 1 } ^ { n } u _ { i }
