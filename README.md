@@ -1,5 +1,7 @@
 # ASR and weighted finite state transducers for LaTeX code generation from speech (-Fr)
 
+(This repot will be not publicly available on github during the anonymous period for Interspeech 2025)
+
 ## Resume
 
 The aim of this project is to build a pipeline which allow people to generate their LaTeX sentences from speech.
