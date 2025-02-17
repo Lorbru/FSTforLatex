@@ -4,17 +4,9 @@
 
 The aim of this project is to build a pipeline which allow people to generate their LaTeX sentences from speech.
 
-The pipeline is composed of an Automatic Speech Recongition model (whisper ASR model from OpenAI) and a Weighted Finite State Transducer architecture (pynini, OpenFST) which allow the conversion of a natural language speaking into a valid code structure for LaTeX compilation and rendering.
-
-*Local test :* 
-
-1. Run ```pip install -r requirement.txt```
-
-2. Run ```streamlit run streamlit_app.py```
+The pipeline is composed of an Automatic Speech Recognition model (whisper ASR model from OpenAI) and a Weighted Finite State Transducer architecture (pynini, OpenFST) which allow the conversion of a natural language speaking into a valid code structure for LaTeX compilation and rendering.
 
 ## Exemples (Seq2Tex_fr)
-
-Some examples of transcriptions for short math expressions (```python main.py```)
 
 ```
 "la somme pour i égal un à n de u indice i"

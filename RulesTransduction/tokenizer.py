@@ -13,7 +13,7 @@ EOS         = "#<EOS>"
 #
 #                         TOKENIZER
 #       FST: transducer that take str and turns it into a
-#                 list of tokens (alphabet Sigma_star)
+#              list of tokens (~ (A_Sigma)*)
 #
 # ***************************************************************** 
 

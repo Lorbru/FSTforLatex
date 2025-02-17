@@ -19,8 +19,6 @@ class loadW2V2bh():
         self.processor = Wav2Vec2Processor.from_pretrained("bhuang/asr-wav2vec2-french")
         self.model_sample_rate = self.processor.feature_extractor.sampling_rate
 
-        
-
     def predict(self, audio):
 
         if type(audio) == str : 
