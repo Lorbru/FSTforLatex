@@ -5,7 +5,7 @@ import torchaudio
 import pandas as pd
 
 audio_path = 'Data/audio/'
-latex_path = 'Data/latex/'
+latex_path = 'Data/latex_norm/'
 sequence_path = 'Data/sequences/'
 
 class Audiodata(Dataset):
@@ -16,7 +16,6 @@ class Audiodata(Dataset):
     def __init__(self):
         
         self.samples = []
-        self._csv_texseq = pd.read_csv('Data/data_analysis.csv')[['audio_path', 'tex']]
         
         for filename in os.listdir(audio_path):
             
@@ -45,9 +44,7 @@ class Audiodata(Dataset):
         audio_file, sequence_file, latex_file, pid, dna = self.samples[idx]
 
         with open(sequence_file, 'r', encoding='utf-8') as reader: sequence = reader.read().split('\n')[0].strip()
-
-        # with open(latex_file, 'r',  encoding='utf-8') as reader: latex = reader.read().split('\n')[0].strip()
-        latex = self._csv_texseq.loc[self._csv_texseq['audio_path'] == audio_file]['tex'].item()
+        with open(latex_file, 'r', encoding='utf-8') as reader2 : latex = reader2.read().split('\n')[0].strip()
 
         return {
 
