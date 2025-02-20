@@ -8,6 +8,12 @@ To see the results and some experiments, see ```demo.ipynb```. The code of this 
 
 For implementation, we use pynini [1] :  ```pip install pynini```
 
+## Resume
+
+The aim of this project is to build a pipeline which allow people to generate their LaTeX sentences from speech. We do our experiments in the French language.
+
+The pipeline is composed of an Automatic Speech Recognition model (whisper ASR model from OpenAI) and a Weighted Finite State Transducer architecture (pynini, OpenFST) which allow the conversion of a natural language speaking into a valid code structure for LaTeX compilation and rendering.
+
 **Details of folders :** 
 
 - `Data` : Contains the collected data (not available here during anonymous period)
@@ -41,11 +47,6 @@ For implementation, we use pynini [1] :  ```pip install pynini```
 
 `main.py` : experiments Sequence to LaTeX (Seq2Tex)
 
-## Resume
-
-The aim of this project is to build a pipeline which allow people to generate their LaTeX sentences from speech. We do our experiments in the French language.
-
-The pipeline is composed of an Automatic Speech Recognition model (whisper ASR model from OpenAI) and a Weighted Finite State Transducer architecture (pynini, OpenFST) which allow the conversion of a natural language speaking into a valid code structure for LaTeX compilation and rendering.
 
 ## Exemples (Seq2Tex_fr)
 
