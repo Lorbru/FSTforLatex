@@ -10,7 +10,7 @@ For implementation, we use pynini [1] :  ```pip install pynini```
 
 ## Resume
 
-The aim of this project is to build a pipeline which allow people to generate their LaTeX sentences from speech. We do our experiments in the French language.
+The aim of this project is to build a pipeline which allows people to generate their LaTeX sentences from speech. We do our experiments in the French language.
 
 The pipeline is composed of an Automatic Speech Recognition model (whisper ASR model from OpenAI) and a Weighted Finite State Transducer architecture (pynini, OpenFST) which allow the conversion of a natural language speaking into a valid code structure for LaTeX compilation and rendering.
 
