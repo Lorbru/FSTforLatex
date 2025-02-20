@@ -6,19 +6,21 @@ Furthermore, the data collected for our experiments are not available here.
 
 To see the results and some experiments, see ```demo.ipynb```)
 
+For implementation, we use pynini [1] :  ```pip install pynini```
+
 **Details of folders :** 
 
-- `Data` : contains the collected data (not available here during anonymous period)
-- `ASR` : loading the ASR used in our systems 
-- `Datasets` : loading our dataset and FLEUR dataset.
+- `Data` : Contains the collected data (not available here during anonymous period)
+- `ASR` : Loading the ASR used in our systems 
+- `Datasets` : Loading our dataset and FLEURS [5] dataset.
 - `Figs` : Figures
 - `Grammar` : Definition of types and grammar rules
 - `Rules` : Normalization rules, Lemmatization rules, Lexical rules (fr)
 - `RulesTransduction` :
 
-    - tokenizer.py : (To define a set of tokens/language $\Sigma$)
-    - rulesFST.py : (To do lexical transducer $\mathcal{L}$)
-    - grammarFST.py : (to do grammatical transducers $\mathcal{G}$)
+    - tokenizer.py : (set of tokens/language $\Sigma$)
+    - rulesFST.py : (lexical transducer $\mathcal{L}$)
+    - grammarFST.py : (grammatical transducers $\mathcal{G}$)
 
 - `Scores` : Scores we obtained (not available here during anonymous period)
 - `Tokens` : Tokens used for natural language and LaTeX language
@@ -38,12 +40,6 @@ To see the results and some experiments, see ```demo.ipynb```)
     - Run ```streamlit run streamlit_app.py``` for local testing
 
 `main.py` : experiments Sequence to LaTeX (Seq2Tex)
-
-**Dependencies:**
-
-- Python 3.8
-- numpy
-- pynini
 
 ## Resume
 
@@ -79,4 +75,17 @@ Some examples of transcriptions for short math expressions (```python main.py```
 "un sur grand n somme pour i allant de un à grand n de norme de grand x moins grand y au carré" 
 > \frac { 1 } { N } \sum \limits _ { i = 1 } ^ { N } \lVert X - Y ^ 2 \rVert
 ```
+## References 
 
+[1] K. Gorman, Pynini: A Python library for weighted finite-state grammar compilation. 2016 In Proc. ACL Workshop on Statistical NLP and Weighted Automata, 75-80. url = {https://pypi.org/project/pynini/}
+
+[2] Michael Riley, Google Research and NYU's Courant Institute, OpenFST,
+C++ library for Weighted Finite State Transducers. 2002 url = {https://www.openfst.org/twiki/bin/view/FST/WebHome}
+
+[3] Titouan Parcollet et al., LeBenchmark 2.0: a Standardized, Replicable and Enhanced Framework for Self-supervised Representations of French Speech, 2023.
+url = {https://huggingface.co/LeBenchmark/wav2vec2-FR-7K-large}
+
+[4] Robust Speech Recognition via Large-Scale Weak Supervision, A. Radford et al.2022, url = {https://arxiv.org/abs/2212.04356},
+
+[5] FLEURS: Few-shot Learning Evaluation of Universal Representations of Speech,
+A. Conneau et al. 2022 url = {https://arxiv.org/abs/2205.12446}
