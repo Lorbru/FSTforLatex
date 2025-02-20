@@ -10,7 +10,7 @@ from ASR.loadWhisper import loadWhisper
 from Seq2Tex import Seq2Tex_fr
 
 
-st.title('Wav2Tex experimental model (fr)')
+st.title('Speech2Tex experimental model (fr)')
 
 accepted_models = ['base', 'small', 'medium']
 
