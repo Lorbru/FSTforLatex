@@ -1,10 +1,10 @@
 # ASR and weighted finite state transducers for LaTeX code generation from speech (-Fr)
 
 (Extracted from the git repository presenting our project for generating LaTeX code from speech.
-For preserving anonymous conditions, this repository will not be available during the anonymous period of Interspeech 2025 submission.
+For preserving anonymity conditions, this repository will not be available during the anonymous period of Interspeech 2025 submission.
 Furthermore, the data collected for our experiments are not available here.
 
-To see the results and some experiments, see ```demo.ipynb```)
+To see the results and some experiments, see ```demo.ipynb```. The code of this file cannot be executed here as it requires access to the collected data)
 
 **Details of folders :** 
 
