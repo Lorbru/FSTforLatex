@@ -86,10 +86,6 @@ class Normalemm():
     def predict(self, x:str):
         for fst in self.__pipeline : x = fst.predict(x)
         return x
-    
-    def outputs(self, x:str):
-        for fst in self.__pipeline : x = fst.predict(x)
-        return x
 
     def properties(self):
         return {

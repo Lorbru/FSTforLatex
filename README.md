@@ -1,10 +1,53 @@
 # ASR and weighted finite state transducers for LaTeX code generation from speech (-Fr)
 
-(This repot will be not publicly available on github during the anonymous period for Interspeech 2025)
+(Extracted from the git repository presenting our project for generating LaTeX code from speech.
+For preserving anonymous conditions, this repository will not be available during the anonymous period of Interspeech 2025 submission.
+Furthermore, the data collected for our experiments are not available here.
+
+To see the results and some experiments, see ```demo.ipynb```)
+
+**Details of folders :** 
+
+- `Data` : contains the collected data (not available here during anonymous period)
+- `ASR` : loading the ASR used in our systems 
+- `Datasets` : loading our dataset and FLEUR dataset.
+- `Figs` : Figures
+- `Grammar` : Definition of types and grammar rules
+- `Rules` : Normalization rules, Lemmatization rules, Lexical rules (fr)
+- `RulesTransduction` :
+
+    - tokenizer.py : (To define a set of tokens/language $\Sigma$)
+    - rulesFST.py : (To do lexical transducer $\mathcal{L}$)
+    - grammarFST.py : (to do grammatical transducers $\mathcal{G}$)
+
+- `Scores` : Scores we obtained (not available here during anonymous period)
+- `Tokens` : Tokens used for natural language and LaTeX language
+- `Vocabulary` : The mathematical vocabulary
+
+**Details of root files :**
+
+`Math-fr.ipynb` : generation of rules for french language
+
+`ScoresGenration.py` : computing scores on datasets
+
+`Seq2Tex.py` : building the Seq2Tex complete module
+
+`streamlit_app.py` : experiments with streamlit (Speech2Tex) 
+
+    - Run ```pip install streamlit``` + dependencies
+    - Run ```streamlit run streamlit_app.py``` for local testing
+
+`main.py` : experiments Sequence to LaTeX (Seq2Tex)
+
+**Dependencies:**
+
+- Python 3.8
+- numpy
+- pynini
 
 ## Resume
 
-The aim of this project is to build a pipeline which allow people to generate their LaTeX sentences from speech.
+The aim of this project is to build a pipeline which allow people to generate their LaTeX sentences from speech. We do our experiments in the French language.
 
 The pipeline is composed of an Automatic Speech Recognition model (whisper ASR model from OpenAI) and a Weighted Finite State Transducer architecture (pynini, OpenFST) which allow the conversion of a natural language speaking into a valid code structure for LaTeX compilation and rendering.
 
